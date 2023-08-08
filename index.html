@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agege Subway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="screen">
+        <div>
+            <img class="logo" src="Images/logo.png" alt="">
+            <button onclick="disLaunch()" id="launch">launch</button>
+        </div>
+        <p class="vers">version 2.2986</p>
+    </main>
+
+    <section id="screen2">
+        <div class="l-nav">
+            <img class="logo2" src="Images/logo2.png" alt="">
+            <img id="bright" class="bright" src="Images/bright.png" alt="">
+        </div>
+        <h1 class="people">PEOPLE ENTERED</h1>
+        <p id="num" class="count"> 0 </p>
+        <div class="btns">
+            <button onclick="increment()" id="btn-add">add</button>
+            <button onclick="save()" id="btn-save">save</button>
+        </div>
+
+        <div class="footer">
+            <img class="line" src="Images/line.png" alt="">
+            <p id="logs"></p>
+            <h2 id="prev" class="prev">Previous logs</h2>
+        </div>
+    </section>
+
+    
+    <section id="screen3">
+        <div class="l-nav3">
+            <img class="logo3" src="Images/logo.png" alt="">
+            <img id="bright2" class="bright2" src="Images/bright2.png" alt="">
+        </div>
+        <h1 class="people">PEOPLE ENTERED</h1>
+        <p id="num" class="count">0</p>
+
+        <div class="btns">
+            <button onclick="increment()" id="btn-add">add</button>
+            <button id="btn-save">save</button>
+        </div>
+
+        <div class="footer">
+            <img class="line1" src="Images/line1.png" alt="">
+            <p class="logs" id="logs">2-5-7-8</p>
+            <h2 class="prev1">Previous logs</h2>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
