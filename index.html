@@ -7,16 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="screen2">
-        <div class="l-nav">
-            <img class="logo2" src="Images/logo2.png" alt="">
-            <a href="light.html"><img id="bright" class="bright" src="Images/bright.png" alt=""> </a>        
+    <main id="screen">
+        <div>
+            <img class="logo" src="Images/logo.png" alt="Agege Subway Logo">
+            <button id="launch" onclick="disLaunch()">launch</button>
+            <p class="vers">version 1.5556</p>
         </div>
-        <h1 class="people">PEOPLE ENTERED</h1>
-        <p id="num" class="count"> 0 </p>
-        <div class="btns">
+    </main>
+    <div class="l-nav" id="l-nav">
+        <img class="logo2" src="Images/logo2.png" alt="">
+        <a href="light.html"><img id="bright" class="bright" src="Images/bright.png" alt=""> </a>        
+    </div>
+    <section id="screen2">
+        <div class="p-count">
+            <h1 class="people">PEOPLE ENTERED</h1>
+            <p id="num" class="count"> 0 </p>
+        </div>
+       
+        <div class="btns" id="desktop-view">
             <button onclick="increment()" id="btn-add">add</button>
             <button onclick="save()" id="btn-save">save</button>
+            <button id="reloadButton">clear</button>
+        </div>
+
+        <div class="btns" id="mobile-view">
+            <div>
+                <button onclick="increment()" id="btn-add">add</button>
+                <button onclick="save()" id="btn-save">save</button>
+            </div>
+                <button id="reloadButton">clear</button>
         </div>
 
         <div class="footer">
