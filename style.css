@@ -7,62 +7,9 @@ body{
     font-family: 'Esteban', serif;
     padding: 0px;
     margin: 0px;
-    background-color: black;
-}
-#screen{
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    background: #4D4DFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#screen div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 190px;
-    width: 100%;
-}
-.logo{
-    width: 400px;
-}
-#launch{
-    width: 126px;
-    height: 42px;
-    border-radius: 10px;
+    height: 90%;
     background-color: #121313;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    text-align: center;
-    font-family: Esteban;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border: none;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-#launch:hover{
-    background-color: transparent;
-    border: 2px solid white;
-}
-.vers{
-    margin-top: 290px;
-    text-align: center;
-    color: #FFF;
-    width: 150px;
-    font-family: DM Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    align-self: flex-end;
+    animation: opaqueIn 2s;
 }
 .l-nav{
     display: flex;
@@ -72,7 +19,6 @@ body{
     padding: 20px 200px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    display: none;
 }
 .logo2{
     width: 120px;
@@ -81,26 +27,25 @@ body{
     width: 40px;
     height: 37px;
     cursor: pointer;
+    display: none;
 }
 #screen2{
     width: 98vw;
-    height: 82vh;
+    height: 60vh;
     padding: 0px;
     display: flex;
     padding-top: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    display: none;
-    border: 2px solid orange;
 }
 .p-count{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    padding: 0px;
+    margin-bottom: 30px;
 }
 .people{
     color: #4D4DFF;
@@ -122,7 +67,8 @@ body{
     margin-bottom: 0px;
     width: fit-content;
     align-self: center;
-    border: 2px solid orange;
+    padding: 0px;
+    margin: 0px;
 }
 .btns{
     display: flex;
@@ -169,6 +115,7 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-inline: 30px;
 }
 .prev{
     color: #FFF;
@@ -190,22 +137,26 @@ body{
     }
 }
 @media (max-width: 650px) {
-    .btns{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
     .btns div{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 100px;
+        gap: 20px;
     }
     #desktop-view{
         display: none;
+    }
+    #reloadButton{
+        display:none;
+    }
+    .count{
+        color: #FFF;
+        font-family: Esteban;
+        font-size: 50px;
+    }
+    .people{
+        font-size: 24px;
     }
 }
 @media (min-width: 651px) {
@@ -214,155 +165,12 @@ body{
     }
 }
 
-
-
-/* #screen{
-    width: 375px;
-    height: 730px;
-    border-radius: 39px;
-    background: #4D4DFF;
-    margin-top: 10px;
-}
-#screen div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 210px;
-}
-.logo{
-    width: 400px;
-}
-#launch{
-    width: 126px;
-    height: 42px;
-    border-radius: 10px;
-    background-color: #121313;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    text-align: center;
-    font-family: Esteban;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border: none;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-#launch:hover{
-    background-color: transparent;
-    border: 2px solid white;
-}
-.vers{
-    margin-top: 290px;
-    margin-left: 250px;
-    color: #FFF;
-    text-align: center;
-    font-family: DM Sans;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-#screen2{
-    width: 375px;
-    height: 730px;
-    border-radius: 39px;
-    background: #121313;
-    margin-top: 10px;
-    transition: all 0.8s;
-}
-.l-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    margin-top: 30px;
-    margin-bottom: 70px;
-}
-.bright, .bright2{
-    wi;dth: 30px;
-    height: 27px;
-    cursor: pointer
-}
-.logo2, .logo3{
-    width: 90px;
-}
-.people{
-    color: #4D4DFF;
-    text-align: center;
-    font-family: Esteban;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.count{
-    color: #FFF;
-    text-align: center;
-    font-family: Esteban;
-    font-size: 150px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 28px;
-    margin-bottom: 0px;
-}
-#screen3{
-    display: none;
-}
-.btns{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#btn-add, #btn-save{
-    width: 131px;
-    height: 137px;
-    border-radius: 10px;
-    background: #4D4DFF;
-    color: #FFF;
-    text-align: center;
-    font-family: Esteban;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border: none;
-    margin-bottom: 35px;
-    cursor: pointer;
-    transition: all 0.4s;
-}
-#btn-add:hover, #btn-save:hover{
-    background: #2626c4;
-}
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.line{
-    margin-left: 12px;
-}
-#logs{
-    color: #4D4DFF;
-    text-align: center;
-    font-family: Esteban;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.prev{
-    color: #FFF;
-    text-align: center;
-    font-family: Esteban;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 0px;
-} */
+@keyframes opaqueIn {
+    from {
+         opacity: 0;      
+    }
+    
+    to {
+         opacity: 1;      
+    }
+ }
