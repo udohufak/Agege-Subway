@@ -15,9 +15,10 @@ Welcome to the Agege-Subway Passenger Counter App! This web application is desig
 
 ## Screenshots
 
-![Screenshot 1](screenshot1.png)
-![Screenshot 2](screenshot2.png)
-![Screenshot 3](screenshot3.png)
+![View 1](screenshot1.png)
+![View 2](screenshot2.png)
+![View 3](screenshot3.png)
+![View 4](screenshot4.png)
 
 ## Technologies Used
 
